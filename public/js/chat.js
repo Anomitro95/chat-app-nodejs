@@ -40,7 +40,8 @@ $messageForm.addEventListener('submit', (e)=>{
         $messageFormInput.value =''
         $messageFormInput.focus()
          if(error){
-             return console.log(error)
+             //$messages.insertAdjacentHTML('beforeend', Mustache.render(messageTemplate, {message : error}))
+             alert(error)
          }
          console.log('Message delivered')
     })

@@ -58,7 +58,7 @@ io.on('connection',(socket) =>{ // if 5 clients accees chat app server, this fun
         
         const filter = new Filter()
         if(filter.isProfane(message)){
-            return callback('Profanity is not allowed!')
+            return acknowledge('Profanity is not allowed!')
         }
         const user =getUser(socket.id)
         if(user){
