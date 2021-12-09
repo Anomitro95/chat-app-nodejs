@@ -18,7 +18,7 @@ const addUser =({id, username, room})=>{
         return user.room === room && user.username === username
     })
 
-    //Validate usernnae
+    //Validate username
     if(existingUser){
         return {
             error : 'Username is in use!'
